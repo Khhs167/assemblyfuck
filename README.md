@@ -1,7 +1,7 @@
 # assemblyfuck
 A text based brainfuck
 
-brainfuck opcodes to asmfuck
+## brainfuck opcodes to asmfuck
 
 \> - ptr \[add/plus/p/+]
 

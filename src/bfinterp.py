@@ -1,3 +1,4 @@
+import sys
 def RunProgram(program):
 	reg = [0]
 	ptr = 0
@@ -23,6 +24,9 @@ def RunProgram(program):
 				i = program[i:].index("]")
 		elif (command == "."):
 			print(chr(reg[ptr]), end="")
+		elif (command == ","):
+			reg[ptr] = ord(sys.stdin.read(1))
+			sys.stdout.write("\010\010\010\010\010")
 		i += 1
 		if (command == "]"):
 			if (reg[0] != 0):
